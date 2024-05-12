@@ -19,7 +19,7 @@ interface NoteDao {
 
     @Delete
     suspend fun deleteNote(note:Note)
-
+//commit
     @Query("SELECT * FROM NOTES ORDER BY id DESC")//NOTE- table name
     fun getAllNotes():LiveData<List<Note>>
 
